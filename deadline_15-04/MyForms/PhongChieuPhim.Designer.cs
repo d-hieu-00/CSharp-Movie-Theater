@@ -32,6 +32,7 @@ namespace deadline_15_04
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhongChieuPhim));
             this.Grbox_TTPhong = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.Btn_Save = new System.Windows.Forms.Button();
             this.Tbox_GiaDoi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@ namespace deadline_15_04
             this.Cbox_PhongChieu = new System.Windows.Forms.ComboBox();
             this.Label_PC = new System.Windows.Forms.Label();
             this.Timer_AutoLoad = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.Grbox_TTPhong.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +73,16 @@ namespace deadline_15_04
             this.Grbox_TTPhong.TabIndex = 0;
             this.Grbox_TTPhong.TabStop = false;
             this.Grbox_TTPhong.Text = "Thông tin các phòng chiếu";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(47, 245);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(197, 17);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "*Nhấn double click để thay đổi giá";
             // 
             // Btn_Save
             // 
@@ -215,16 +225,6 @@ namespace deadline_15_04
             this.Timer_AutoLoad.Enabled = true;
             this.Timer_AutoLoad.Interval = 1000;
             this.Timer_AutoLoad.Tick += new System.EventHandler(this.Timer_AutoLoad_Tick);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(47, 245);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(197, 17);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "*Nhấn double click để thay đổi giá";
             // 
             // PhongChieuPhim
             // 

@@ -65,7 +65,7 @@ namespace deadline_15_04
             this.Pn_main_function.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pn_main_function.Location = new System.Drawing.Point(1, 32);
             this.Pn_main_function.Name = "Pn_main_function";
-            this.Pn_main_function.Size = new System.Drawing.Size(798, 367);
+            this.Pn_main_function.Size = new System.Drawing.Size(798, 273);
             this.Pn_main_function.TabIndex = 1;
             // 
             // Btn_DatVe
@@ -134,7 +134,7 @@ namespace deadline_15_04
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(800, 400);
+            this.ClientSize = new System.Drawing.Size(800, 306);
             this.Controls.Add(this.Lb_InfoApp);
             this.Controls.Add(this.Pn_main_function);
             this.Controls.Add(this.Btn_close);
