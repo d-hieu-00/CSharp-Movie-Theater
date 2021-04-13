@@ -36,6 +36,23 @@ namespace deadline_15_04
                 MyResources.AutoLoadDV = false;
                 MyResources.AutoLoadDV = false;
             }
+            if (MyResources.AutoLoadGP)
+            {
+                HoaDon tmp = GetHoaDonForSave();
+                if (tmp == null)
+                    return;
+                string MaPhong = tmp.GetTTHoaDon()[2];
+                Phong t = MyResources.MyRapPhim.FindPhong(MaPhong);
+                int tt = 0;
+                foreach (string i in tmp.MaGhe)
+                    foreach (Ghe j in t.ListGhe)
+                        if (i == j.MaGhe)
+                        {
+                            tt += j.Gia;
+                            break;
+                        }
+                Label_TongTien.Text = string.Format("{0:N}", tt).Replace(".00", "").Replace(",", ".");
+            }
         }
         #region load Phim
         public FlowLayoutPanel CreatePhim(Phim t)

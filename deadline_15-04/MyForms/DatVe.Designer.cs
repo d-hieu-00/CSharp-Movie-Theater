@@ -47,7 +47,6 @@ namespace deadline_15_04
             this.Label_NgayChieu = new System.Windows.Forms.Label();
             this.Label_PhongChieu = new System.Windows.Forms.Label();
             this.PnFlow_GheDaDat = new System.Windows.Forms.FlowLayoutPanel();
-            this.Label_TempGDC = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.Label_TT = new System.Windows.Forms.Label();
             this.Label_GC = new System.Windows.Forms.Label();
@@ -57,7 +56,6 @@ namespace deadline_15_04
             this.Label_TenPhim = new System.Windows.Forms.Label();
             this.Grbox_Filter.SuspendLayout();
             this.Grbox_TTVePhim.SuspendLayout();
-            this.PnFlow_GheDaDat.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnFlow_DatVe
@@ -230,21 +228,10 @@ namespace deadline_15_04
             // PnFlow_GheDaDat
             // 
             this.PnFlow_GheDaDat.AutoScroll = true;
-            this.PnFlow_GheDaDat.Controls.Add(this.Label_TempGDC);
             this.PnFlow_GheDaDat.Location = new System.Drawing.Point(9, 195);
             this.PnFlow_GheDaDat.Name = "PnFlow_GheDaDat";
             this.PnFlow_GheDaDat.Size = new System.Drawing.Size(200, 75);
             this.PnFlow_GheDaDat.TabIndex = 6;
-            // 
-            // Label_TempGDC
-            // 
-            this.Label_TempGDC.AutoSize = true;
-            this.Label_TempGDC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_TempGDC.Location = new System.Drawing.Point(3, 0);
-            this.Label_TempGDC.Name = "Label_TempGDC";
-            this.Label_TempGDC.Size = new System.Drawing.Size(29, 17);
-            this.Label_TempGDC.TabIndex = 7;
-            this.Label_TempGDC.Text = "A01";
             // 
             // label18
             // 
@@ -337,8 +324,6 @@ namespace deadline_15_04
             this.Grbox_Filter.PerformLayout();
             this.Grbox_TTVePhim.ResumeLayout(false);
             this.Grbox_TTVePhim.PerformLayout();
-            this.PnFlow_GheDaDat.ResumeLayout(false);
-            this.PnFlow_GheDaDat.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -355,7 +340,6 @@ namespace deadline_15_04
         private System.Windows.Forms.Button Btn_ThongTinHoaDon;
         private System.Windows.Forms.GroupBox Grbox_TTVePhim;
         private System.Windows.Forms.FlowLayoutPanel PnFlow_GheDaDat;
-        private System.Windows.Forms.Label Label_TempGDC;
         private System.Windows.Forms.Label Label_TenPhim;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label Label_TT;

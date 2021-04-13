@@ -61,6 +61,7 @@ namespace deadline_15_04
                 Tbox_GiaDoi.Text = string.Format("{0:N}", pDou).Replace(".00", "").Replace(",", ".");
                 Tbox_GiaDon.ReadOnly = true;
                 Tbox_GiaDoi.ReadOnly = true;
+                MyResources.AutoLoadGP = true;
             }
             else
                 MessageBox.Show("Có lỗi éo lưu đc", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
