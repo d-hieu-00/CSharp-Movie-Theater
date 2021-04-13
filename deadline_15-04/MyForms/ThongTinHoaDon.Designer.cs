@@ -131,7 +131,7 @@ namespace deadline_15_04.MyForms
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ThongTinHoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ThongTinHoaDon";
+            this.Text = "Thông tin hóa đơn theo ngày";
             this.ResumeLayout(false);
 
         }

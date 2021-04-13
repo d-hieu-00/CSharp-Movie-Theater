@@ -93,7 +93,7 @@ namespace deadline_15_04
             this.Btn_ThongTinHoaDon.Name = "Btn_ThongTinHoaDon";
             this.Btn_ThongTinHoaDon.Size = new System.Drawing.Size(210, 28);
             this.Btn_ThongTinHoaDon.TabIndex = 10;
-            this.Btn_ThongTinHoaDon.Text = "Xem thông tin vé đặt theo ngày";
+            this.Btn_ThongTinHoaDon.Text = "Thông tin vé đặt theo ngày";
             this.Btn_ThongTinHoaDon.UseVisualStyleBackColor = false;
             this.Btn_ThongTinHoaDon.Click += new System.EventHandler(this.Btn_ThongTinHoaDon_Click);
             // 

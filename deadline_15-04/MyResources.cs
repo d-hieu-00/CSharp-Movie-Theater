@@ -10,7 +10,7 @@ namespace deadline_15_04
     class MyResources
     {
         private static Boolean autoLoadDMP = false;
-        private static Boolean autoLoadPC = false;
+        private static Boolean autoLoadGP = false;
         private static Boolean autoLoadDV = false;
         private static RapPhim rapPhim;
         private static DanhMucPhim form_DanhMucPhim;
@@ -23,10 +23,10 @@ namespace deadline_15_04
             get { return autoLoadDMP; }
             set { autoLoadDMP = value; }
         }
-        public static Boolean AutoLoadPC
+        public static Boolean AutoLoadGP
         {
-            get { return autoLoadPC; }
-            set { autoLoadPC = value; }
+            get { return autoLoadGP; }
+            set { autoLoadGP = value; }
         }
         public static Boolean AutoLoadDV
         {

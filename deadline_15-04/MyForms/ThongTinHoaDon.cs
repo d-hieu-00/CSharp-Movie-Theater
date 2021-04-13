@@ -21,6 +21,7 @@ namespace deadline_15_04.MyForms
             InitializeComponent();
             LisView_TTHoaDon.Items.Clear();
             Label_TT.Text = "Danh sách các hóa đơn ngày " + d.Day + "/" + d.Month + "/" + d.Year;
+            this.Text += " " + d.Day + "/" + d.Month + "/" + d.Year;
             foreach (List<string> i in l)
                 LisView_TTHoaDon.Items.Add(new System.Windows.Forms.ListViewItem(i.ToArray(), -1));
             this.Deactivate += LostFocusHandle;

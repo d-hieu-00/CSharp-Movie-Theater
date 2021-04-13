@@ -313,6 +313,35 @@ namespace deadline_15_04.Entity
             }
             return l;
         }
+        public List<int> GetPriceRoom(string MaPhong)
+        {
+            foreach (Phong i in ListPhong)
+                if (i.MaPhong == MaPhong)
+                {
+                    return new List<int>()
+                    {
+                        i.ListGhe[0].Gia,
+                        i.ListGhe[i.ListGhe.Count - 1].Gia
+                    };
+                }
+            return null;
+        }
+        public bool SetPriceRoom(string MaPhong, int pSig, int pDou)
+        {
+            foreach (Phong i in ListPhong)
+                if (i.MaPhong == MaPhong)
+                {
+                    foreach (Ghe j in i.ListGhe)
+                    {
+                        if (j.LoaiGhe == "Ghế đôi")
+                            j.Gia = pDou;
+                        else
+                            j.Gia = pSig;
+                    }
+                    return true;
+                }
+            return false;
+        }
         public RapPhim()
         {
             soPhong = 3;

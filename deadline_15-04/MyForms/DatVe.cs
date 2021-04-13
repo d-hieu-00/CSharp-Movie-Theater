@@ -262,7 +262,7 @@ namespace deadline_15_04
         private void HienThiThongTinVe(Phim t, SuatChieu s)
         {
             Grbox_TTVePhim.Show();
-            Label_TenPhim.Text = t.TenPhim.Substring(0, (t.TenPhim.Length > 15) ? 15 : t.TenPhim.Length);
+            Label_TenPhim.Text = t.TenPhim.Substring(0, (t.TenPhim.Length > 14) ? 14 : t.TenPhim.Length);
             Label_TenPhim.Name = t.MaPhim;
             Label_PhongChieu.Text = s.MaPhong;
             Label_NgayChieu.Text = s.Ngay + "/" + s.Thang + "/" + s.Nam;
@@ -490,6 +490,8 @@ namespace deadline_15_04
             PrintPreviewDialog p = new PrintPreviewDialog();
             p.Document = doc;
             doc.PrintPage += new PrintPageEventHandler(Doc_PrintPage);
+            p.ShowIcon = true;
+            
             p.ShowDialog();
         }
         #endregion
@@ -575,9 +577,11 @@ namespace deadline_15_04
         }
         private void Btn_Filter_Click(object sender, EventArgs e)
         {
-            foreach(Control i in PnFlow_DatVe.Controls)
+            foreach (Control i in PnFlow_DatVe.Controls)
                 if (!MyResources.MyRapPhim.CheckPhimSameDate(i.Name, DateTime_Ngay.Value))
                     i.Hide();
+                else
+                    i.Show();
         }
         #endregion
 
